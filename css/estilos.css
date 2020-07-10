@@ -1,58 +1,117 @@
-body{
+body {
   font-family: sans-serif;
   width: 100%;
   background-color: #031A30;
-  }
-html{
+}
+
+html {
   box-sizing: border-box;
 }
 
-.fondos{
+section {
+  padding: 0 15%;
+  background-color: #031A30;
+}
+
+nav {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  background-color: #35b789;
+  padding: 0 15%;
+  align-items: center;
+}
+
+.navegacion ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.navegacion ul li {
+  padding: 0 10px;
+  font-weight: bold;
+}
+
+.bienvenida {
+  background-image: url("../img/fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 0;
   display: flex;
   left: -190.5px;
   box-sizing: content-box;
   width: 100%;
   min-height: 100vh;
 }
-.titulo__parte2{
-  text-align:center;
+
+.titulo__parte2 {
+  text-align: center;
   color: #ffffff;
 }
-.titulo__descripcion{
+
+.titulo__descripcion {
 
   color: #ffffff;
   text-align: center;
 }
-.logos__enlaces1{
+
+.logos__enlaces1 {
   display: flex;
 }
-.logos__enlaces2{
+
+.logos__enlaces2 {
   display: flex;
 }
-.logos{
+
+.logos {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 
-  }
-.primeraparte{
+}
+
+.primeraparte {
   background-color: #031A30;
   height: 100%;
   box-sizing: content-box;
 }
-.presentacion{
-  background-color: #031A30;
+
+.presentacion article {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 30px;
-  padding: 30px;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
 
 }
 
+.presentacion .contenedor {
+  max-width: 50%;
+  min-width: 50%;
+}
 
-.titulo{
+@media (max-width: 700px) {
+  .presentacion .contenedor {
+    max-width: 100%;
+    min-width: 100%;
+
+  }
+  section{
+    padding: 0;
+  }
+}
+
+.presentacion .muestra {
+
+  padding: 40px;
+}
+
+.presentacion .muestra img {
+  max-width: 100%;
+  height: auto;
+
+}
+
+.titulo {
   margin: 0 auto;
   padding: 0;
   text-align: center;
@@ -61,17 +120,19 @@ html{
   color: white;
   background-color: #031A30;
 }
-.video__muestra{
+
+.video__muestra {
   text-align: center;
   margin: 0;
   padding: 0;
-  }
+}
 
-.descripcion{
+.descripcion {
   text-align: center;
   color: #ffffff;
 }
-.menciones{
+
+.menciones {
   text-align: center;
   color: #d1d1d1;
 }
