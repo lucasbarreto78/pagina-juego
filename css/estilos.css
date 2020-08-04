@@ -1,3 +1,10 @@
+*{
+  margin:0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 body {
   font-family: sans-serif;
   width: 100%;
@@ -137,5 +144,48 @@ nav {
   color: #d1d1d1;
 }
 
+ul,ol{
+  list-style: none;
+}
+
+
+
+.diapositiva{
+
+  width: 100%;
+  position: relative;
+
+}
+
+.diapositiva ul, li{
+  width: 100%
+}
+
+.diapositiva li, img{
+  width: 100%;
+}
+
+.arrow-left, .arrow-right{
+  position: absolute;
+  height: 100%;
+  top: 2080px;
+  display: flex;
+  color: #fff;
+  font-size: 40px;
+  z-index: 1;
+  cursor: pointer;
+  align-items: center;
+  flex-direction: column;
+
+
+}
+
+.arrow-left{
+  left: 100px;
+}
+.arrow-right{
+  right: 100px;
+
+}
 
 
