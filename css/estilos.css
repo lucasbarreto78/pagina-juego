@@ -150,12 +150,20 @@ ul,ol{
 
 
 
-.diapositiva{
+.diapositivaS{
 
   width: 100%;
   position: relative;
 
+
+
 }
+.diapositiva li{
+  overflow: hidden;
+}
+
+
+
 
 .diapositiva ul, li{
   width: 100%
@@ -167,24 +175,25 @@ ul,ol{
 
 .arrow-left, .arrow-right{
   position: absolute;
-  height: 100%;
-  top: 2080px;
+  justify-content: center;
+
   display: flex;
   color: #fff;
   font-size: 40px;
   z-index: 1;
   cursor: pointer;
   align-items: center;
-  flex-direction: column;
 
 
 }
 
 .arrow-left{
   left: 100px;
+
 }
 .arrow-right{
   right: 100px;
+
 
 }
 
