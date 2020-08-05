@@ -1,9 +1,6 @@
-$(document).ready(function() {
-  let  imgItems = $('.diapositiva li').length//Numero de diapositiva
+$(document).ready(function () {
+  let imgItems = $('.diapositiva li').length//Numero de diapositiva
   let imgPos = 1
-
-
-
 
 
   $('.diapositiva li').hide();//Ocultar todas las diapositivas
@@ -15,24 +12,31 @@ $(document).ready(function() {
 
   //Funciones===========================================
 
-  function nextSlider(){
-    if(imgPos >= imgItems){imgPos = 1;}else
-      {imgPos++;}
+  function nextSlider() {
+    if (imgPos >= imgItems) {
+      imgPos = 1;
+    } else {
+      imgPos++;
+    }
 
-console.log(imgPos)
+    console.log(imgPos)
     $('.diapositiva li').hide();//Ocultar todos las diapositivas
-    $('.diapositiva li:nth-child( '+imgPos+' )').fadeIn();//Mostrar el slide seleccionado
+    $('.diapositiva li:nth-child( ' + imgPos + ' )').fadeIn();//Mostrar el slide seleccionado
 
   }
-  function prevSlider(){
 
-    if(imgPos <= 1){imgPos = imgItems;}else
-    {imgPos--;}
-console.log(imgPos)
+  function prevSlider() {
+
+    if (imgPos <= 1) {
+      imgPos = imgItems;
+    } else {
+      imgPos--;
+    }
+    console.log(imgPos)
 
 
     $('.diapositiva li').hide();//Ocultar todos las diapositivas
-    $('.diapositiva li:nth-child( '+imgPos+ ' )').fadeIn();//Mostrar el slide seleccionado
+    $('.diapositiva li:nth-child( ' + imgPos + ' )').fadeIn();//Mostrar el slide seleccionado
 
   }
 
